@@ -1,7 +1,4 @@
 Olá pessoal!!!
-Boa Noite!
-Juan
+Adalto
 Aula de Git
 Edição do colaborador
-
-
