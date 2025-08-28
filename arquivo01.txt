@@ -1,6 +1,7 @@
 Olá pessoal!!!
 Boa Noite!
 Adalto Selau
+Eduardo
 Aula de Git
 Edição do colaborador
 
