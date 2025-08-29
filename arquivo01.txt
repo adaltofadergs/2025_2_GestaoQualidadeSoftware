@@ -3,6 +3,7 @@ Boa Noite!
 
 Aula de Git
 Edição do colaborador: Adalto
+Edição do colaborador: Jonas
 
 Adalto Selau
 Eduardo
