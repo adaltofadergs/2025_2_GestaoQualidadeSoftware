@@ -1,0 +1,29 @@
+Cenário de Teste: site KABUM	
+
+Cenário 01 - Pesquisa/Busca de produtos
+
+Objetivo: Este cenário tem por objetivo validar os casos de teste em relação a pesquisa
+dos prudotos no site da KABUM, funcionamento de filtros, pequisas por palavras chaves.
+
+Pré-requisito: acesso a internet, ter acesso ao site da KABUM, conseguir digitar na
+barra de pesquisa e selecionar filtros.
+
+CABEÇALHO DO CASO DE TESTE
+
+ID:01
+DESCRAÇÃO: este caso de teste valida o funcionamento da parte de consultar os produtos no site da KABUM.
+Condição de aceite: o sistema deve aceitar diferentes palvras chaves na barra de pesquisa para achar um produto,
+quando colocar para pesquisar um produto tem que aparecer o solicitado, a eficácia dos filtros na busca dos produtos,como:
+preço, tamanho, tipo, cor, entre outros.
+Pré-Condições: possuir acesso a internet, acesso ao site da Kabum, alguma forma de fazer buscas no site.
+
+
+             AÇÃO 
+ 	- Acessar a página www.kabum.com      |  - A página inicial da KABUM será exibida.
+	- Fazer busca de algum produto na     |  - O produto desejado deve ser exibido após 
+	barra de pesquisa.   		      |  a busca.
+	- Fazer a busca por palavras chaves.  |  - Deve aparecer produtodos relacionados a esta palavra.
+ 	- Filtrar os produtos conforme dese-  |  - Após feita a seleção do filtro, deve aparecer exatemente
+	ja, seja pela cor, tipo, preço, valor |  o que foi selecionado, se colocou cor azul, deve aparecer 
+	de entrega.			      |  o produto azul.
+ 	
