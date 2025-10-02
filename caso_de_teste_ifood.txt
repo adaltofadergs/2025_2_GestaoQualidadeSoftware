@@ -1,0 +1,27 @@
+
+Cenário 01 - Filtrar Restaurantes por Região e Tipo de Comida
+
+Objetivo: Este cenário tem por objetivo validar se o sistema aplica corretamente os filtros de região e tipo de comida, retornando apenas os restaurantes que atendem simultaneamente aos dois critérios.
+
+Pré-requisitos: Acesso à internet ativo, estar logado no iFood, endereço de entrega válido cadastrado, existência de restaurantes cadastrados com pizza no cardápio na região escolhida.
+
+
+Cabeçalho do Caso de Teste
+
+Descrição: Este caso de teste valida se o sistema aplica corretamente os filtros por região e por tipo de comida, retornando apenas os restaurantes que atendem aos dois critérios.
+
+Nome: Filtrar restaurantes por região e por tipo de comida 
+
+Condição de aceite: O sistema deve exibir apenas restaurantes localizados na região selecionada e que tenham pizza no cardápio.
+
+Pré-condições: estar logado no iFood, Endereço válido cadastrado, Restaurantes cadastrados com pizza no cardápio na região escolhida, acesso à internet ativo
+
+Corpo do Caso de Teste
+
+Ação	                                                Resultado Esperado
+Acessar o site do iFood	                             A página inicial do iFood será exibida com os restaurantes disponíveis para o endereço do usuário
+Confirmar ou selecionar endereço de entrega	     O sistema carrega os restaurantes que atendem à localização
+Clicar no botão de filtros	                     O sistema exibe as opções de filtragem, como região, tipo de comida, tempo de entrega, entre outros
+Selecionar uma região específica                     O sistema exibe os restaurantes que entregam na região Zona Sul
+No filtro selecionar o tipo de comida "Pizza"	     O sistema aplica os dois filtros e exibe somente restaurantes de pizza que atendem a região selecionada
+Verificar a lista de restaurantes exibida	     Todos os restaurantes devem ter pizza no cardápio e estar dentro da área de entrega da região escolhida
