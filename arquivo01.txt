@@ -2,9 +2,13 @@ Olá pessoal!!!
 oa Noite!
 
 Aula de Git
+<<<<<<< HEAD
 
 Edição do colaborador: Adalto Selau
 Edição do colaborador: Jonas Silva
+=======
+Edição do colaborador: Lucas
+>>>>>>> 05a52a354ffbf8d7d5496e05fd75da4839c4b6d9
 
 Adalto Selau
 Eduardo
