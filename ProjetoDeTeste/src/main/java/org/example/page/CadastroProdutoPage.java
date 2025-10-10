@@ -86,6 +86,69 @@ public class CadastroProdutoPage extends BasePage {
         return this;
     }
 
+    public CadastroProdutoPage selecionarCanalVenda(String canal01, String canal02, String canal03){
+        Select dropdown = new Select( selCanalVenda );
+        dropdown.selectByVisibleText( canal01 );
+        dropdown.selectByVisibleText( canal02 );
+        dropdown.selectByVisibleText( canal03 );
+        return this;
+    }
+
+    public CadastroProdutoPage selecionarCanalVenda(String ...canal){
+        Select dropdown = new Select( selCanalVenda );
+        for (String s : canal) {
+            dropdown.selectByVisibleText( s );
+        }
+        return this;
+    }
+
+    public CadastroProdutoPage selecionarVendaImediataSim(){
+        rbSim.click();
+        return this;
+    }
+
+    public CadastroProdutoPage selecionarFormaCaixa(){
+        cbCaixa.click();
+        return this;
+    }
+
+    public CadastroProdutoPage selecionarFormaUnidade(){
+        cbUnidade.click();
+        return this;
+    }
+
+    public CadastroProdutoPage selecionarFormaPacote(){
+        cbPacote.click();
+        return this;
+    }
+
+    public CadastroProdutoPage selecionarFormaDuzia(){
+        cbDuzia.click();
+        return this;
+    }
+
+    public String clicarGZH(){
+        linkGZH.click();
+        String titulo = driver.getTitle();
+        driver.navigate().back();
+        return titulo;
+    }
+
+    public String clicarGoogle(){
+        linkGoogle.click();
+        String url = driver.getCurrentUrl();
+        driver.navigate().back();
+        return url;
+    }
+
+    public CadastroProdutoPage clicarCadastrar(){
+        btnCadastrar.click();
+        return this;
+    }
+
+    public String buscarResutadoCadastro(){
+        return driver.getPageSource();
+    }
 
 
 }
