@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Shopee Mock</title>
+</head>
+<body style="font-family: Arial; text-align:center; margin-top:50px;">
+<h2>Login - Shopee Mock</h2>
+
+<form id="loginForm">
+    <input id="username" type="text" placeholder="Email ou celular"><br><br>
+    <input id="password" type="password" placeholder="Senha"><br><br>
+    <button id="loginButton" type="button">Entrar</button><br><br>
+    <a href="#" id="forgotPassword">Esqueceu a senha?</a>
+</form>
+
+<div id="message" style="margin-top:20px; color:blue;"></div>
+
+<script>
+    const msg = document.getElementById("message");
+    document.getElementById("loginButton").onclick = function() {
+        const user = document.getElementById("username").value;
+        const pass = document.getElementById("password").value;
+        if (user === "teste@shopee.com" && pass === "123456") {
+            msg.innerText = "Login realizado com sucesso!";
+        } else {
+            msg.innerText = "Usuário ou senha incorretos";
+        }
+    };
+
+    document.getElementById("forgotPassword").onclick = function() {
+        msg.innerText = "Link de redefinição enviado para seu email!";
+    };
+</script>
+</body>
+</html>

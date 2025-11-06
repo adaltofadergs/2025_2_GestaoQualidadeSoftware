@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><title>Pesquisa Mock</title></head>
+<body style="font-family:Arial; text-align:center; margin-top:40px;">
+<h2>Página de Pesquisa - Shopee Mock</h2>
+<input id="search" type="text" placeholder="Buscar produto...">
+<button id="btnBuscar">Buscar</button>
+<div id="resultado" style="margin-top:20px;"></div>
+
+<script>
+    document.getElementById("btnBuscar").onclick = function() {
+        const termo = document.getElementById("search").value;
+        document.getElementById("resultado").innerText =
+            "Resultados encontrados para: " + termo;
+    };
+</script>
+</body>
+</html>
